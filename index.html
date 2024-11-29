@@ -33,19 +33,26 @@
   </div>
 </header><br>
 <style>
-.example3{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    padding: 50px;
-    box-sizing: border-box;
-    background: url(/MASSA.png) no-repeat center center / cover;
+.example6{
+    position: relative;
+}
+.example6 img{
+    width: 100%;
+    height: auto;
+}
+.example6>div{
+    position: absolute;
+    left: 10%;
+    /*コレ*/bottom: 10%;
     color: #000;
     font-size: 200%;
     font-weight: bold;
 }
 </style>
-<div class="example3">まっさー株式会社</div>
+<div class="example6">
+    <img src="/MASSA.png" alt="">
+    <div>重ねたい文字</div>
+</div>
 <div class="p-header__nav-box-mask" id="js-mask"></div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
