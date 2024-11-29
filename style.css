@@ -49,6 +49,7 @@
 
 .p-header__nav-items {
   padding-top: 200px;
+  list-style:none
 }
 
 .p-header__nav-item {
