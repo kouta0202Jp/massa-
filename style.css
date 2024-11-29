@@ -152,4 +152,7 @@
 .example img {
   width: 100%;
   }
+body {
+  background-color:#a0a0a0;
+}
 }
