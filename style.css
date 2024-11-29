@@ -133,3 +133,35 @@
   background: rgba(0,0,0,0.55);
   transition: ease .4s;
 }
+
+/* table01 */
+#table01 tr {
+  border-bottom: 1px solid #b5b1b1;
+}
+
+#table01 th,
+#table01 td {
+  padding: 24px 0;
+  border: none;
+}
+
+#table01 th {
+  width: 30%;
+}
+
+/* sp */
+@media only screen and (max-width: 480px) {
+  #table01 th,
+  #table01 td {
+    width: 100%;
+    display: block;
+  }
+
+  #table01 th {
+    width: 100%;
+  }
+
+  #table01 td {
+    padding-top: 0;
+  }
+}
