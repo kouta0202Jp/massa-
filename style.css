@@ -139,14 +139,15 @@
 
 .example p {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 90%;
+  left: 30%;
   -ms-transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   margin:0;
   padding:0;
-  /*文字の装飾は省略*/
+  font-family: "Zen Antique Soft", serif;
+  font-style: normal;
   }
 
 .example img {
