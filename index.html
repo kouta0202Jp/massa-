@@ -39,21 +39,63 @@ font-size:15px;
     </button>
   </div>
 </header><br>
-<style>
-.example3{
-    /*追加*/display: flex;
-    /*追加*/justify-content: flex-start;
-    /*追加*/align-items: flex-end;
-    /*追加*/padding: 50px;
-    /*追加*/box-sizing: border-box;
-    background: url(/yes.mp4) no-repeat center center / cover;
-    height: 300px;
-    color: #FFF;
-    font-size: 200%;
-    font-weight: bold;
+  <style>
+    .container-video {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  opacity: 0.01;
+  animation: load 1.5s 0.8s ease-out forwards;
 }
-</style>
-<div class="example3">まっさー株式会社</div>
+.container-video #video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+@keyframes load {
+  100% {
+    opacity: 1;
+  }
+}
+.table-center {
+  display: table;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+.table-center > div {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  text-align: center;
+}
+.table-center > div p {
+  color: #fff;
+  text-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 10px;
+  font-size: 2em;
+  font-weight: 600;
+}
+  </style>
+<div class="container-video">
+  <div class="table-center">
+    <div>
+      <p>mp4の動画を背景にして<br>文字を乗せる</p>
+    </div>
+  </div>
+  <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+    <source src="/yes.mp4" type="video/mp4">
+</div>
 <h2>
 まっさー株式会社とは？
 </h2>
