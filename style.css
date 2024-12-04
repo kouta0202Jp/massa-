@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family: '1';
-  src: url(ロゴたいぷゴシック.otf) format("otf");
+  src: url(ロゴたいぷゴシック.otf) format("opentype");
 }
 
 .p-header {
@@ -131,6 +131,6 @@
 body {
   background-color:#a0a0a0;
 }
-h1 h2 p a li {
+h1,h2,p,a,li {
   font-family: '1';
 }
