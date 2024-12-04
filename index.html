@@ -84,6 +84,31 @@ font-size:15px;
   font-size: 2em;
   font-weight: 600;
 }
+.visual {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+.movie {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.movie video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: block;
+	width: auto;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+	transform: translate(-50%,-50%);
+}
   </style>
 <div class="container-video">
   <div class="table-center">
@@ -91,8 +116,12 @@ font-size:15px;
       <p>まっさー株式会社<br>誰かさんによる冗談で作られたフィクションの会社</p>
     </div>
   </div>
+<div class="visual">
+	<div class="movie">
   <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
     <source src="/yes.mp4" type="video/mp4">
+	  	</div>
+</div>
 </div>
 <h2>
 まっさー株式会社とは？
