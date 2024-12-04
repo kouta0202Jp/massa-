@@ -3,7 +3,10 @@
 *::after {
   box-sizing: border-box;
 }
-
+@font-face {
+  font-family: '1';
+  src: url(ロゴたいぷゴシック.otf) format("otf");
+}
 
 .p-header {
   width: 100%;
@@ -128,4 +131,6 @@
 body {
   background-color:#a0a0a0;
 }
+h1 h2 p a li {
+  font-family: '1';
 }
