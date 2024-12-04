@@ -84,47 +84,6 @@ font-size:15px;
   font-size: 2em;
   font-weight: 600;
 }
-.video-container {
-  margin: 0 auto;
-  width: 100%;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-
-.video-wrap {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
-  background: url(img/video.jpg) no-repeat center center/cover;
-}
-
-video {
-  min-width: 100%;
-  min-height: 100%;
-  position: absolute;
-}
-
-/*画面サイズが変わっても常に動画の中央が表示されるようにする*/
-/*動画よりも画面が横に長くなるとき用*/
-@media (aspect-ratio: 16/9), (min-aspect-ratio: 16/9) {
-  video {
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-
-/*動画よりも画面が縦に長くなるとき用*/
-@media (max-aspect-ratio: 16/9) {
-  video {
-    height: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
   </style>
 <div class="container-video">
   <div class="table-center">
@@ -132,12 +91,8 @@ video {
       <p>まっさー株式会社<br>誰かさんによる冗談で作られたフィクションの会社</p>
     </div>
   </div>
-<div class="video-container">
-<div class="video-wrap">
 <video src="yes.mp4" type="video/mp4" playsinline loop autoplay muted>
 </video>
-</div>		
-</div>	
 <h2>
 まっさー株式会社とは？
 </h2>
