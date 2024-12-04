@@ -14,6 +14,7 @@
   right: 0;
   z-index: 999;
   background: #222222;
+   animation: load 2s 1s ease-out forwards;
 }
 
 .p-header__inner {
