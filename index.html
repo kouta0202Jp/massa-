@@ -124,7 +124,9 @@ font-size:15px;
     </button>
   </div>
 </header><br>
+<div id="koko">
  <p id="jp">まっさー株式会社</p>
+</div>
   <p>誰かさんによる冗談で作られた会社...<br>もちろんフィクション。なぜ名前がまっさー株式会社なのかは知らん。</p><br>
   <h2>
     田中政信とは？
@@ -139,6 +141,24 @@ font-size:15px;
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
 <script src="https://raw.githubusercontent.com/mntn-dev/t.js/master/t.min.js"></script>
 <script src="iine.js"></script>
-<script src="index.js"></script>
+<script>
+  $(function(){
+ var offset = $('#koko').offset().top;
+ var height = $(window).height();
+
+ $(window).scroll(function () {
+   if ($(this).scrollTop() > offset - height) {
+      // アニメーションを実行
+    $(function(){
+    $('#jp').t({
+        speed:60,//60ミリ秒
+        speed_vary:true,
+        blink_perm:false,
+    });
+});
+    } 
+ });
+}
+</script>
 </script>
 </html>
