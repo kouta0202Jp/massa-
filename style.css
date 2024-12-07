@@ -139,14 +139,3 @@ footer {
   height: 100px;
   background: #a0a0a0;
 }
- .typed_wrap h2 {
-   color: #000;
-  font-family: '1';
- }
- .typed::after {
-   content: "|";
-   animation: blink 0.7s infinite;
- }
- @keyframes blink {
-   50%{opacity: 0;}
- }
