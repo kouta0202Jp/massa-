@@ -128,7 +128,7 @@
   top: -13px;
   transform: rotate(-45deg);
 }
-h1,h2,p,a,li {
+h1,h2,p,a,li,#jp {
   font-family: '1';
 }
 footer {
