@@ -124,9 +124,8 @@ font-size:15px;
     </button>
   </div>
 </header><br>
- <h1 id="jp">まっさー株式会社</h1>
-</div>
-  <p>誰かさんによる冗談で作られた会社...<br>もちろんフィクション。なぜ名前がまっさー株式会社なのかは知らん。</p><br>
+ <h1 id="jp"></h1>
+  <p>まっさー株式会社は完全なフィクションの企業で、ユーモア好きな誰かさんのアイデアから生まれた、ちょっと変わった存在です。実在しない会社ですが、皆さんの想像力を刺激できたら幸いです。 このサイトは私が心を込めて制作しました。まっさー株式会社では、ユニークなプロジェクトや斬新なアイデアをたくさん紹介していく予定です。だからぜひ、まっさー株式会社の世界を存分にお楽しみください！皆さんの笑顔が見られたら、私も嬉しく思います！</p><br>
   <h2>
     田中政信とは？
   </h2>
@@ -140,4 +139,29 @@ font-size:15px;
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
 <script src="https://raw.githubusercontent.com/mntn-dev/t.js/master/t.js"></script>
 <script src="iine.js"></script>
+<script>
+  <script>
+        const text = "まっさー株式会社とは？";
+        const target = document.getElementById('jp');
+
+        function typeWriter(text, i) {
+            if (i < text.length) {
+                target.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(() => typeWriter(text, i), 100); // タイピング速度
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            const targetPosition = target.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (targetPosition < windowHeight && target.innerHTML === '') {
+                typeWriter(text, 0);
+                // 一度だけ実行するため、イベントリスナーを削除
+                window.removeEventListener('scroll', arguments.callee);
+            }
+        });
+    </script>
+</script>
 </html>
