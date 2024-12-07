@@ -1,12 +1,12 @@
 $(function(){
- var offset = $('.jp').offset().top;
+ var offset = $('.typing').offset().top;
  var height = $(window).height();
 
  $(window).scroll(function () {
    if ($(this).scrollTop() > offset - height) {
       $(function() {
   //タイピングアニメーション
-  $('.js').typed({
+  $('.typed').typed({
     strings: ["welcome to My Portfolio.", "Let's scroll down."],
     typeSpeed: 100,
     startDelay: 1000,
