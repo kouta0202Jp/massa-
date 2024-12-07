@@ -140,23 +140,4 @@ font-size:15px;
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
 <script src="https://raw.githubusercontent.com/mntn-dev/t.js/master/t.js"></script>
 <script src="iine.js"></script>
-<script>
-  $(function(){
-  $(window).scroll(function (){
-    $('#jp:not(:has(span))').each(function(){
-      var elemPos = $(this).offset().top;
-      var scroll = $(window).scrollTop();
-      var windowHeight = $(window).height();
-      if (scroll > elemPos - windowHeight){
-        $(this).t({
-          speed_vary: true,
-          mistype: true,
-          caret: true,
-          repeat:false
-        });
-      }
-    });
-  });
-});
-</script>
 </html>
