@@ -145,14 +145,14 @@ font-size:15px;
 <script src="https://raw.githubusercontent.com/mntn-dev/t.js/master/t.js"></script>
 <script src="iine.js"></script>
   <script>
-        const text = "まっさー株式会社とは？";
+        const text = "<h2>まっさー株式会社とは？</h2>";
         const target = document.getElementById('jp');
 
         function typeWriter(text, i) {
             if (i < text.length) {
                 target.innerHTML += text.charAt(i);
                 i++;
-                setTimeout(() => typeWriter(text, i), 100); // タイピング速度
+                setTimeout(() => typeWriter(text, i), 60); // タイピング速度
             }
         }
 
